@@ -27,12 +27,31 @@ proguard/
 
 # Log Files
 *.log
+.log
+
+# Temporary Files
+*.temp
+*.tmp
 
 # Android Studio Navigation editor temp files
 .navigation/
+.settings/
 
 # Android Studio captures folder
 captures/
+
+# Android
+android/.gradle/
+android/build/
+android/app/build/
+
+# iOS
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/Flutter/
+
+# Web
+web/build/
 
 # IntelliJ
 *.iml
@@ -43,6 +62,7 @@ captures/
 .idea/dictionaries
 .idea/libraries
 .idea/caches
+.idea/
 
 # Keystore files
 # Uncomment the following line if you do not want to check your keystore files in.
@@ -75,7 +95,9 @@ fastlane/readme.md
 .dart_tool/
 .packages
 .pub/
+.pub-cache/
 build/
+.analysis_options
 # If you're building an application, you may want to check-in your pubspec.lock
 pubspec.lock
 
@@ -242,6 +264,7 @@ DerivedData/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+.vscode/
 
 
 ## Custom
@@ -250,3 +273,10 @@ GoogleService-Info.plist
 google-services.json
 # Plugins (already resolved through pubspec.yaml)
 .flutter-plugins
+
+# Specific files
+/linux/flutter/generated*.*
+/windows/flutter/generated*.*
+/macos/[Ff]lutter/[Gg]enerated*.*
+
+
